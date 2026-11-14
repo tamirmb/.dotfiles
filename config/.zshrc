@@ -11,3 +11,6 @@ PROMPT='%F{green}%n@%m%f %F{blue}%~%f %# '
 
 # Optional: colored tab-completion lists
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+
+# Git TUI
+alias lgit='lazygit'
