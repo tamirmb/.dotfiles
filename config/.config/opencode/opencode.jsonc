@@ -1,0 +1,40 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "skills": {
+    "paths": [".claude/skills"]
+  },
+  "references": {
+    "config": {
+      "path": "~/.dotfiles/config/.config",
+      "description": "Application configuration managed by the user's dotfiles repository"
+    },
+    "downloads": {
+      "path": "~/Downloads",
+      "description": "Files in the user's Downloads directory"
+    },
+    "home": {
+      "path": "~/",
+      "description": "Files in the user's home directory"
+    },
+    "notes": {
+      "path": "~/Documents/horizon/05 Inbox/",
+      "description": "Files in the user's Obsidian vault"
+    },
+    "tmp": {
+      "path": "/tmp",
+      "description": "Temporary files"
+    }
+  },
+  "mcp": {
+    "atlassian": {
+      "type": "remote",
+      "url": "https://mcp.atlassian.com/v1/mcp/authv2",
+      "enabled": true
+    }
+  },
+  "permission": {
+    "external_directory": {
+      "/tmp/pr-summary-*.md": "allow"
+    }
+  }
+}

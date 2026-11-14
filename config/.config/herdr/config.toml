@@ -1,0 +1,9 @@
+[theme]
+name = "nord"
+auto_switch = false
+
+[keys]
+previous_workspace = "prefix+up"
+next_workspace = "prefix+down"
+previous_tab = "prefix+left"
+next_tab = "prefix+right"

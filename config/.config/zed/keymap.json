@@ -1,0 +1,60 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+      "ctrl-k ctrl-right": "pane::SplitRight",
+      "ctrl-k ctrl-left": "pane::SplitRight",
+      "ctrl-k ctrl-up": "pane::SplitUp",
+      "ctrl-shift-right": "pane::ActivateNextItem",
+      "ctrl-shift-left": "pane::ActivateLastItem",
+    },
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {},
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-i": "editor::ToggleCodeActions",
+      "ctrl-enter": "editor::Newline",
+    },
+  },
+  {
+    "bindings": {
+      "ctrl-b": "workspace::ToggleRightDock",
+    },
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-e": "pane::SplitRight",
+    },
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-o": "pane::SplitDown",
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-j": "workspace::ToggleLeftDock",
+    },
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-b": "workspace::ToggleLeftDock",
+    },
+  },
+]
