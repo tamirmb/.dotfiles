@@ -5,5 +5,9 @@
   },
   "effortLevel": "medium",
   "autoCompactEnabled": true,
-  "includeCoAuthoredBy": false
+  "theme": "auto",
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  }
 }
