@@ -1,4 +1,5 @@
 export PATH="$HOME/.local/bin:$PATH"
+source <(fzf --zsh)
 
 # Colored ls, plus colors for grep
 export CLICOLOR=1
@@ -12,5 +13,6 @@ PROMPT='%F{green}%n@%m%f %F{blue}%~%f %# '
 # Optional: colored tab-completion lists
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
-# Git TUI
 alias lgit='lazygit'
+alias zshrc='nvim $HOME/.zshrc'
+alias dotfiles='cd $HOME/.dotfiles'
